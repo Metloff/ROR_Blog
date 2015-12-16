@@ -1,0 +1,37 @@
+
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>
+			Asdasd sad asd sa asd a asdaasd asfasfa  sadf asfa a sfa sf dasjd hsakdhaskf sakfhysakjdf safhaskjfhdas dfsakdhsa d hsakdh askdjhsakdh
+		</p>
+		<p>
+			Ldsaldj sapd ja jsadf faspdueou q[wepio qwe  qwe[]wqe]qwe qwe qwe qwe
+			wqeqweqwef
+			 ed dsf  fewr wer ew rew 
+		</p>
+		<p>
+			asdasd sad asd sa asd a asdaasd asfasfa  sadf asfa a sfa sf dasjd hsakdhaskf sakfhysakjdf safhaskjfhdas dfsakdhsa d hsakdh askdjhsakdh
+		</p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Stuff i've Written</h2>
+		<hr>
+
+		<% @posts.each do |post|%>
+		<h3><%=link_to post.title, post%></h3>
+		<p class="date"><%= post.created_at.strftime("%A, %b %d, %Y")%></p>
+		<% end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Stuff i've Built</h2>
+		<hr>
+		<h3>The DO list</h3>
+		<p class="date">Friday April 10th</p>
+		<h3>The DO list2</h3>
+		<p class="date">Friday April 10th</p>
+		<h3>The DO list3</h3>
+		<p class="date">Friday April 10th</p>
+	</div>
+</div>

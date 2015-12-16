@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Henry Metlov - Web Developer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+</head>
+<body>
+<header id="main_navigation" class="clearfix">
+	<%= link_to 'Henry Metlov', root_path, class: 'name' %>
+	<nav>
+		<%= link_to "Articles", posts_path %>
+		<a href="#">Project</a>
+		<a href="#">Contact</a>
+	</nav>
+</header>
+<%= yield %>
+
+<footer id="main_footer">
+	<p class="copyright">&copy;2015 Henry Metlov</p>
+	<nav>
+		<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+		<a href="http://vk.com/genrih.metlov" target="_blank"><i class="fa fa-vk"></i></a>
+		<a href="http://github.com/Metloff" target="_blank"><i class="fa fa-github"></i></a>
+	</nav>
+</footer>
+</body>
+</html>
