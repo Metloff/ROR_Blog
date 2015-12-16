@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20151216165455) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -36,4 +37,3 @@ ActiveRecord::Schema.define(version: 20151216165455) do
 
   add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true
 
-end

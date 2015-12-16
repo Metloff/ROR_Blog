@@ -47,3 +47,4 @@ class PostsController < ApplicationController
     @post = Post.friendly.find(params[:id])
   end
 end
+
