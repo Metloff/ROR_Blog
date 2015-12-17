@@ -21,10 +21,15 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+# For markdown to html
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'pygments.rb', '~> 0.6.3'
+# For pretty url name
 gem 'friendly_id', '~> 5.1'
+# For Pagination
 gem 'will_paginate', '~> 3.0', '>= 3.0.7'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
