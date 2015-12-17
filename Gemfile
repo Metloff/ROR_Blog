@@ -24,8 +24,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # For markdown to html
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'pygments.rb', '~> 0.6.3'
+
 # For pretty url name
 gem 'friendly_id', '~> 5.1'
+# For transliterate (Russian -> translite)
+gem 'babosa'
+
 # For Pagination
 gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 
