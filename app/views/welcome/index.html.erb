@@ -27,11 +27,11 @@
 	<div class="col-3 homepage_content">
 		<h2>Stuff i've Built</h2>
 		<hr>
-		<h3>The DO list</h3>
-		<p class="date">Friday April 10th</p>
-		<h3>The DO list2</h3>
-		<p class="date">Friday April 10th</p>
-		<h3>The DO list3</h3>
-		<p class="date">Friday April 10th</p>
+
+		<% @projects.each do |project|%>
+		<h3><%=link_to project.title, project%></h3>
+		<p class="date"><%= project.created_at.strftime("%A, %b %d, %Y")%></p>
+		<% end %>
 	</div>
+
 </div>
