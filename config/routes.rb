@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   get 'welcome/index'
   root 'welcome#index'
+
+  get '*path' => redirect('/')
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
